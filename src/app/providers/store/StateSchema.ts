@@ -7,25 +7,17 @@ import { SchoolSchema } from '../../../entities/School'
 import { FastLinkState } from '../../../widgets/FastLinks'
 import { Routes } from '../router'
 
-export enum Modules {
-    FOOD = 'food',
-    MENTAL = 'mental',
-    SCHOOL = 'school',
-    HOBBY = 'hobby',
-    POLITICS = 'politics',
-}
-
 export interface StateSchema {
     // misc
     fastLinks: FastLinkState
     hero: HeroSchema
 
     // modules
-    food: FoodSchema
-    mental: MentalSchema
-    school: SchoolSchema
-    hobby: HobbySchema
-    politics: PoliticsSchema
+    Еда: FoodSchema
+    Психика: MentalSchema
+    Школа: SchoolSchema
+    Хобби: HobbySchema
+    Политика: PoliticsSchema
 }
 
 export type StateSchemaKey = keyof StateSchema

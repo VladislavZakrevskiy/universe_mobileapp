@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import React, { useEffect, useState } from "react";
-import { Modules } from "../../../app/providers/store/StateSchema";
+import { Modules } from "../../../app/providers/router/routeConfig";
 import { useAppSelector } from "../../../shared/lib/hooks/useAppSelector";
 import { moduleIcons } from "../../../shared/consts/skins/moduleIcons";
 
@@ -11,7 +11,7 @@ interface Props {
 export const FastLinksItem = ({ name }: Props) => {
   const { percent } = useAppSelector((state) => state[name]);
   const [color, setColor] = useState<string>("#000");
-  // const percent = 93;
+
   useEffect(() => {
     // Пересчитать процент выполнености
     // ...

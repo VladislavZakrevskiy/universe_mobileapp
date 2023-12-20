@@ -15,11 +15,11 @@ export const createReduxStore = (initaialState?: StateSchema) => {
     hero: HeroReducer,
 
     // modules
-    food: FoodReducer,
-    hobby: HobbyReducer,
-    mental: MentalReducer,
-    politics: PoliticsReducer,
-    school: SchoolReducer
+    Еда: FoodReducer,
+    Хобби: HobbyReducer,
+    Психика: MentalReducer,
+    Политика: PoliticsReducer,
+    Школа: SchoolReducer
   };
 
   const store = configureStore({

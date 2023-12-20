@@ -1,5 +1,5 @@
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
-import { Modules } from "../../../app/providers/store/StateSchema";
+import { Modules } from "../../../app/providers/router/routeConfig";
 import { ReactNode } from "react";
 
 export const moduleIcons: Record<Modules, ReactNode> = {
