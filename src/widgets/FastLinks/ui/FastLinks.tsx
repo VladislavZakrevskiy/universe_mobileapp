@@ -3,7 +3,7 @@ import React from "react";
 import { HStack } from "native-base";
 import { useAppSelector } from "../../../shared/lib/hooks/useAppSelector";
 import { FastLinksItem } from "./FastLinksItem";
-import { Modules } from "../../../app/providers/router/routeConfig";
+import { Modules } from "../../../app/providers/router/route";
 
 export const FastLinks = () => {
   // const { fastLinks } = useAppSelector((state) => state.fastLinks);

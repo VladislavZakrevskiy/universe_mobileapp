@@ -6,7 +6,8 @@ import { experienceTable } from '../../../../shared/consts/levels/experienceTabl
 const initialState: HeroSchema = {
     level: 1,
     experience: 0,
-    currentHeroSkin: 1
+    currentHeroSkin: 1,
+    money: 0
 };
 
 
@@ -39,6 +40,13 @@ export const HeroSlice = buildSlice({
                     state.currentHeroSkin = +levels[i][0]
                 }
             }
+        },
+
+        addMoney: (state, action: PayloadAction<number>) => {
+            if (action.payload < 0 && state.money > -action.payload) {
+                state.money += action.payload
+            }
+            if (action.payload > 0) state.money += action.payload
         }
     },
 });

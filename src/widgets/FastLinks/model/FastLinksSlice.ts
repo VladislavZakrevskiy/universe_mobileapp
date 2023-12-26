@@ -1,6 +1,6 @@
 import { PayloadAction } from "@reduxjs/toolkit";
 import { buildSlice } from "../../../shared/lib/store/buildSlice";
-import { Modules } from '../../../app/providers/router/routeConfig';
+import { Modules } from "../../../app/providers/router/route";
 
 export interface FastLinkState {
     fastLinks: Modules[]

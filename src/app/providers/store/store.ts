@@ -7,6 +7,8 @@ import { MentalReducer } from "../../../entities/Mental/model/slices/MentalSlice
 import { PoliticsReducer } from "../../../entities/Politics/model/slices/PoliticsSlice";
 import { SchoolReducer } from "../../../entities/School/model/slices/SchoolSlice";
 import { HeroReducer } from "../../../entities/Hero/model/slices/HeroSlice";
+import { SleepReducer } from "../../../entities/Sleep/model/slices/SleepSlice";
+import { Routes } from "../router";
 
 export const createReduxStore = (initaialState?: StateSchema) => {
   const rootReducers: ReducersMapObject<StateSchema> = {
@@ -15,11 +17,12 @@ export const createReduxStore = (initaialState?: StateSchema) => {
     hero: HeroReducer,
 
     // modules
-    Еда: FoodReducer,
-    Хобби: HobbyReducer,
-    Психика: MentalReducer,
-    Политика: PoliticsReducer,
-    Школа: SchoolReducer
+    [Routes.FOOD]: FoodReducer,
+    [Routes.HOBBY]: HobbyReducer,
+    [Routes.MENTAL]: MentalReducer,
+    [Routes.POLITICS]: PoliticsReducer,
+    [Routes.SCHOOL]: SchoolReducer,
+    [Routes.SLEEP]: SleepReducer
   };
 
   const store = configureStore({

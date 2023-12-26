@@ -7,15 +7,15 @@ export function LevelStat() {
   const { level } = useAppSelector((state) => state.hero);
 
   return (
-    <LinearGradient colors={["#00f", "#000"]} style={styles.container}>
+    <View style={styles.container}>
       <Text style={styles.text}>{level}</Text>
-    </LinearGradient>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: " linear-gradient(#e66465, #9198e5)",
+    backgroundColor: "#00f",
     borderRadius: 12,
     paddingRight: 12,
     paddingBottom: 6,

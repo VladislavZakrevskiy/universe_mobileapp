@@ -5,7 +5,8 @@ export enum Routes {
     MENTAL = 'Психика',
     SCHOOL = 'Школа',
     HOBBY = 'Хобби',
-    POLITICS = 'Политика'
+    POLITICS = 'Политика',
+    SLEEP = 'Сон'
 }
 
 export type RootStackParamList = {
@@ -15,6 +16,7 @@ export type RootStackParamList = {
     Школа: undefined
     Хобби: undefined
     Политика: undefined
+    Сон: undefined
 }  
 
 export type MainProps = NativeStackScreenProps<RootStackParamList, Routes.MAIN>
@@ -23,3 +25,12 @@ export type MentalProps = NativeStackScreenProps<RootStackParamList, Routes.MENT
 export type SchoolProps = NativeStackScreenProps<RootStackParamList, Routes.SCHOOL>
 export type HobbyProps = NativeStackScreenProps<RootStackParamList, Routes.HOBBY>
 export type PoliticsProps = NativeStackScreenProps<RootStackParamList, Routes.POLITICS>
+export type SleepProps = NativeStackScreenProps<RootStackParamList, Routes.SLEEP>
+export enum Modules {
+    FOOD = 'Еда',
+    MENTAL = 'Психика',
+    SCHOOL = 'Школа',
+    HOBBY = 'Хобби',
+    POLITICS = 'Политика',
+    SLEEP = 'Сон'
+}

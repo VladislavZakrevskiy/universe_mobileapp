@@ -1,9 +1,9 @@
 import { memo } from "react";
 import { View } from "react-native";
 
-interface SchoolProps {}
+interface SleepProps {}
 
-export const SchoolPage = memo((props: SchoolProps) => {
+export const SleepPage = memo((props: SleepProps) => {
   const {} = props;
 
   return <View></View>;

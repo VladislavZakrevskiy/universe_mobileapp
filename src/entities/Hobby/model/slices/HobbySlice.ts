@@ -3,7 +3,7 @@ import { HobbySchema } from '../types/HobbySchema';
 import { buildSlice } from '../../../../shared/lib/store/buildSlice';
 
 const initialState: HobbySchema = {
-    percent: 40
+    percent: 0
     
 };
 

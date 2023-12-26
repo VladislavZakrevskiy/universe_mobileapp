@@ -1,0 +1,1 @@
+export const SEMESTR_LESSONS = 50

@@ -4,6 +4,7 @@ import { HobbySchema } from '../../../entities/Hobby'
 import { MentalSchema } from '../../../entities/Mental'
 import { PoliticsSchema } from '../../../entities/Politics'
 import { SchoolSchema } from '../../../entities/School'
+import { SleepSchema } from '../../../entities/Sleep'
 import { FastLinkState } from '../../../widgets/FastLinks'
 import { Routes } from '../router'
 
@@ -13,11 +14,12 @@ export interface StateSchema {
     hero: HeroSchema
 
     // modules
-    Еда: FoodSchema
-    Психика: MentalSchema
-    Школа: SchoolSchema
-    Хобби: HobbySchema
-    Политика: PoliticsSchema
+    [Routes.FOOD]: FoodSchema
+    [Routes.MENTAL]: MentalSchema
+    [Routes.SCHOOL]: SchoolSchema
+    [Routes.HOBBY]: HobbySchema
+    [Routes.POLITICS]: PoliticsSchema
+    [Routes.SLEEP]: SleepSchema
 }
 
 export type StateSchemaKey = keyof StateSchema

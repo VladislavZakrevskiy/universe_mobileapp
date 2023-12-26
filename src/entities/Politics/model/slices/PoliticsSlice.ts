@@ -3,7 +3,7 @@ import { PoliticsSchema } from '../types/PoliticsSchema';
 import { buildSlice } from '../../../../shared/lib/store/buildSlice';
 
 const initialState: PoliticsSchema = {
-    percent: 100
+    percent: 0
     
 };
 

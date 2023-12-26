@@ -3,7 +3,7 @@ import { MentalSchema } from '../types/MentalSchema';
 import { buildSlice } from '../../../../shared/lib/store/buildSlice';
 
 const initialState: MentalSchema = {
-    percent: 60
+    percent: 0
     
 };
 

@@ -7,7 +7,7 @@ export default function App() {
   return (
     <AppProvider>
       <RouterProvider />
-      <StatusBar style="auto" />
+      <StatusBar animated />
     </AppProvider>
   );
 }
