@@ -39,7 +39,6 @@ export function Roulette({ level, setIsWin }: CasinoGameProps) {
 
   const shoot = () => {
     setCurrentPatron((prev) => {
-      console.log(prev + 1);
       if (patrons[prev + 1]) {
         setIsWin("Fail");
       }

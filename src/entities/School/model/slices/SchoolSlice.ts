@@ -2,6 +2,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { SchoolSchema } from '../types/SchoolSchema';
 import { buildSlice } from '../../../../shared/lib/store/buildSlice';
 import { LessonsName } from '../types/Lesson';
+import { teacherList } from '../../../../shared/consts/lessons/teacherList';
 
 const initialState: SchoolSchema = {
     percent: 0,
@@ -56,7 +57,8 @@ const initialState: SchoolSchema = {
             likely: 0,
             skill: 0
         },
-    }
+    },
+    teachers: {...teacherList}
 };
 
 export const SchoolSlice = buildSlice({

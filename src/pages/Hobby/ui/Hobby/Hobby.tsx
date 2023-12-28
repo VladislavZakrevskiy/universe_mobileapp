@@ -2,21 +2,18 @@ import { Text } from "native-base";
 import { memo, useEffect, useState } from "react";
 import { View } from "react-native";
 import { Roulette } from "../../../../features/Casino/Roulette/Roulette";
+import { Card } from "../../../../features/Casino/Cards/Card";
+import { GuessMyCard } from "../../../../features/Casino/Cards/GuessMyCard/Cards";
+import { TicTacToe } from "../../../../features/Casino/TicTacToe/TicTacToe";
+import { Barrel } from "../../../../features/Casino/Barrel/Barrel";
 
 interface HobbyProps {}
 
 export const HobbyPage = memo((props: HobbyProps) => {
-  const {} = props;
-  const [isWin, setIsWin] = useState<"Win" | "Fail">();
-
-  useEffect(() => {
-    console.log(isWin);
-  }, [isWin]);
-
   return (
     <View>
-      <Text>Dumb</Text>
-      <Roulette level="EASY" setIsWin={setIsWin} />
+      <Text>Dumb 1</Text>
+      <TicTacToe setIsWin={() => 0} />
     </View>
   );
 });

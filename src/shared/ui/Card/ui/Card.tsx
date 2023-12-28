@@ -1,15 +1,16 @@
 import { Button, HStack, Text, VStack, View } from "native-base";
-import { ReactNode } from "react";
+import { Component, ReactNode } from "react";
 import { StyleSheet } from "react-native";
 
 interface Props {
   header: ReactNode;
   body: ReactNode;
+  CustomButton?: ReactNode;
   onPressBtn?: () => void;
-  btnTitle: string;
+  btnTitle?: string;
 }
 
-export function Card({ body, header, onPressBtn, btnTitle }: Props) {
+export function Card({ body, header, onPressBtn, btnTitle, CustomButton }: Props) {
   return (
     <VStack style={styles.container} borderColor={"primary.800"}>
       <HStack style={styles.header} bg={"primary.800"}>
@@ -20,9 +21,13 @@ export function Card({ body, header, onPressBtn, btnTitle }: Props) {
           {body}
         </VStack>
       </VStack>
-      <Button style={styles.buy_btn} onPress={onPressBtn}>
-        {btnTitle}
-      </Button>
+      {CustomButton ? (
+        CustomButton
+      ) : (
+        <Button style={styles.buy_btn} onPress={onPressBtn}>
+          {btnTitle}
+        </Button>
+      )}
     </VStack>
   );
 }
